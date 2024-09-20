@@ -1,3 +1,4 @@
+# Products available in the store by category
 products = {
     "IT Products": [
         ("Laptop", 1000),
@@ -71,6 +72,7 @@ def validate_email(email):
     return "@" in email
 
 def main():
+    cart = []  # Initialize the cart as an empty list
     name = input("Please enter your name: ")
     while not validate_name(name):
         print("Invalid name. Please enter a valid name (must contain both first and last name, with alphabets only).")
